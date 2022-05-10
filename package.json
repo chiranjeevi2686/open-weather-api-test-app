@@ -20,7 +20,7 @@
     "url": "https://github.com/chiranjeevi2686/open-weather-api-test-app.git"
   },
   "scripts": {
-    "api-tests": "cucumber-js --parallel 1 -f json:report/report.json && node report/cucumber-report.js",
+    "api-tests": "cucumber-js --parallel 1 --tags=@sit -f json:report/report.json && node report/cucumber-report.js",
     "generate-html-report": "node report/cucumber-report.js"
 
   },
