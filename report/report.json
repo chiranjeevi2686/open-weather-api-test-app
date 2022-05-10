@@ -1,0 +1,174 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "open-weather-api's-tests;registration-without-an-api-key,-results-401-status-and-error-validation",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Registration without an API key, results 401 status and error validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User register a weather station without an api key and validates error message",
+            "match": {
+              "location": "features/support/steps.js:7"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 605000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n     [\n    -  \"cod\"\n    +  \"code\"\n       \"message\"\n     ]\n\n    at World.<anonymous> (/Users/kumarnetyam/Workspace/open-weather-api-test-app/features/support/steps.js:20:39)\n    at processTicksAndRejections (internal/process/task_queues.js:97:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "open-weather-api's-tests;registration-with-a-valid-api-key,-results-201-status",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Registration with a valid API key, results 201 status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User register a weather station with a valid api key and id DEMO_TEST001",
+            "match": {
+              "location": "features/support/steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 702000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "open-weather-api's-tests;registration-with-a-valid-api-key,-results-201-status",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Registration with a valid API key, results 201 status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "User register a weather station with a valid api key and id DEMO_TEST002",
+            "match": {
+              "location": "features/support/steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 707000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "open-weather-api's-tests;retrieving-registered-stations-using-get,-results-a-200-status-and-data-validation",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Retrieving registered stations using GET, results a 200 status and data validation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "User retrieves registered stations and verify the data to be correct",
+            "match": {
+              "location": "features/support/steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "open-weather-api's-tests",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Open weather api's tests",
+    "tags": [],
+    "uri": "features/weather-open-api.feature"
+  }
+]
